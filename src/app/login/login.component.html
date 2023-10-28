@@ -1,0 +1,35 @@
+<body>
+    <div class="container">
+        <img src="https://i.postimg.cc/vTFd1CQ4/shanthanu-logo-04.png" alt="" id="logo">
+    
+        <div class="box" *ngIf="this.state">
+            <h1 id="mainhead" >Find it.Track it</h1>
+            <div class="btnbox"><button (click)="lclick()">LOGIN</button></div>
+             
+        </div>
+        <div class="box1" *ngIf="!this.state">
+            <form action="#">
+                <label for="">ENTER YOUR ID:</label>
+                <div class="inputbox">
+                    <select name="" id="">
+                        <option value="">2020</option>
+                        <option value="">2021</option>
+                        <option value="">2022</option>
+                        <option value="">2023</option>
+                      </select>
+                      <select name="" id="">
+                        <option value="">EE</option>
+                        <option value="">EC</option>
+                        <option value="">MC</option>
+                        <option value="">CS</option>
+                      </select>
+                    <input type="text" placeholder="eg:151">
+                </div>
+                
+                <div class="ctn">
+                    <button (click)="redirect()">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>

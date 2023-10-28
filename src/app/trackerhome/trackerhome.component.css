@@ -1,0 +1,67 @@
+.container{
+    max-width: 100%;
+    height: 80vh;
+
+    background-image: url('https://i.postimg.cc/tJDfpg4N/Google-Map-TA.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.container select{
+    height: 60px;
+    width: 500px;
+    border: 2px solid red;
+    display: flex;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    -webkit-border-radius: 0;
+    letter-spacing: 2px;
+    
+   
+}
+
+.container label{
+    font-family: 'Open Sans';
+    font-size: 20px;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;    
+}
+
+button{
+    max-width: 200px;
+    height: 40px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+button:first-child{
+    background-color: green;
+}
+
+@media screen and (max-width:540px) {
+    
+    .container select{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:340px) {
+    
+    .container select{
+        width: 250px;
+    }
+}

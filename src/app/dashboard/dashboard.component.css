@@ -1,0 +1,126 @@
+.dashboard{
+    max-width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://i.postimg.cc/tJDfpg4N/Google-Map-TA.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main{
+    background-color: transparent;
+    max-width: 100%;
+    height: 75vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:30px;
+    justify-content: center;   
+}
+
+.main button{
+    width: 430px;
+    height: 100px;
+
+    font-family: 'Open Sans';
+    font-size: 20px;
+    letter-spacing: 2px;
+
+    border:3px solid red;
+    color: white;
+    background-color: red;
+
+    border-radius: 0rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: ease-in-out;
+    transition-duration: 300ms;
+   
+    
+}
+
+.main button:hover{
+    font-size: 21px;
+    gap:12px;
+    letter-spacing: 2px;
+    -webkit-box-shadow: 0px 0px 28px 0px rgba(255,0,0,0.35);
+-moz-box-shadow: 0px 0px 28px 0px rgba(255,0,0,0.35);
+box-shadow: 0px 0px 28px 0px rgba(255,0,0,0.35);
+cursor: pointer;
+transform: scale(1.04);
+}
+
+.dashboard #logout{
+    max-width: 200px;
+    height: 40px;
+    background-color: red;
+    font-family: "Open Sans";
+    border: none;
+    color: white;
+    letter-spacing: 2px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 400ms;
+    margin-bottom: 5px;
+}
+
+.dashboard #logout:hover{
+    font-size:medium;
+    cursor: pointer;
+}
+
+@media screen and (max-width:875px){
+
+    .main{
+        
+        flex-direction: column;
+    }
+
+    
+    
+    
+    
+}
+
+@media screen and (max-width:480px){
+
+    .main button{
+        
+        width: 300px;
+        font-size: 15px;
+        height: 60px;
+    }
+
+    
+    
+    
+    
+}
+
+@media screen and (max-width:470px){
+
+    .main button{
+        
+        width: 230px;
+        font-size: 15px;
+        height: 50px;
+    }
+
+    .main button:hover{
+        
+        -webkit-box-shadow: 0px 0px 28px 0px rgba(255,0,0,0.35);
+    -moz-box-shadow: 0px 0px 28px 0px rgba(255,0,0,0.35);
+    box-shadow: 0px 0px 28px 0px rgba(255,0,0,0.35);
+    cursor: pointer;
+    background-color: rgb(247, 80, 80);
+    }
+    
+    
+    
+}

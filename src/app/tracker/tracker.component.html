@@ -1,0 +1,13 @@
+<body>
+    <div class="container" id="ctn" >
+        <!-- <google-map [options]="options" width={{mapWidth}} height={{mapHeight}}>
+            <map-marker [options]="busOptions" [title]="busName" [label]="busLabel">
+            </map-marker>
+        </google-map> -->
+        <div id="map" style="width: 100%; height: 400px;"></div>
+    </div>
+
+    
+    <h1>{{busLat}}-{{busLong}}</h1>
+    <button (click)="initializeMap()">STOP TRACKING<i class="fa-solid fa-stop fa-xl" style="color: #ffffff;"></i></button>
+</body>
